@@ -1,0 +1,149 @@
+:root {
+    --dark-blue: #31343c;
+    --peach: #eb995a;
+    --salmon: #db7c57;
+    --light-red: #cb6054;
+    --pinkish-red: #bc4452;
+    --logo-bg: #3a3f47;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--logo-bg);
+}
+
+header h1 {
+    margin: 0;
+}
+
+header img {
+    background-color: var(--logo-bg);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: var(--salmon);
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    background-color: var(--peach);
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: var(--light-red);
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.search-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 300px;
+}
+
+.search-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: var(--pinkish-red);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: var(--light-red);
+}
+
+section {
+    padding: 20px;
+}
+
+#about {
+    background-color: var(--light-red);
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#about p {
+    border: 2px solid var(--dark-blue);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#places ul {
+    padding: 0;
+    list-style: none;
+}
+
+#places ul li {
+    background-color: var(--peach);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#places ul li strong {
+    color: var(--dark-blue);
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"] {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    width: 300px;
+}
+
+#contact form input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--pinkish-red);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact form input[type="submit"]:hover {
+    background-color: var(--light-red);
+}
